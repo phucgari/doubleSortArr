@@ -10,6 +10,7 @@ class DoubleSort2ArrTest {
     void testGetSecondArr(){
         int[]expected=new int[]{0,1,2,3};
         assertTrue(Arrays.equals(expected, arr.getSecondArr()));
+
         arr=new Setup2Arr(5,2,4,4,4);
         expected=new int[]{0,1,2,3,4};
         assertTrue(Arrays.equals(expected, arr.getSecondArr()));
