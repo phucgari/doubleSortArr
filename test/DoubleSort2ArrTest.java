@@ -18,12 +18,11 @@ class DoubleSort2ArrTest {
     @Test
     void sort2ArrAtSameTime(){
         int[] expected=new int[]{2,0,1,3};
-        testSortResult(expected);
-        int[] result;
+        testSortAs(expected);
 
         arr=new Setup2Arr(4,3,2,1);
         expected=new int[]{3,2,1,0};
-        testSortResult(expected);
+        testSortAs(expected);
     }
     @Test
     void testPrintResult(){
@@ -31,7 +30,7 @@ class DoubleSort2ArrTest {
         String result="7 8 9 3 ";
         assertEquals(result,Main.print(testCase));
     }
-    private void testSortResult(int[] expected) {
+    private void testSortAs(int[] expected) {
         int[] result=Main.doubleSort2Arr_returnSubArr(arr.getFirstArr(),arr.getSecondArr());
         assertTrue(Arrays.equals(expected, result));
     }
